@@ -1,5 +1,3 @@
-#!/usr/bin/env -S deno run -A
-
 import { requireEnv } from "./utils/env.js";
 import { callGemini } from "./ai/geminiClient.js";
 import { buildSystemPrompt } from "./ai/promptBuilder.js";
