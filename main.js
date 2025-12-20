@@ -8,8 +8,8 @@ async function main() {
   const userPrompt = Deno.args.join(" ");
 
   if (!userPrompt) {
-    console.error("No prompt provided");
-    Deno.exit(1);
+    console.error('Usage: pilot "<task description>"');
+    Deno.exit(1); 
   }
 
   const systemPrompt = buildSystemPrompt(userPrompt);
