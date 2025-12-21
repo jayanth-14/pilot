@@ -16,4 +16,5 @@
 - Limitations
 - Future improvements
 
-# 
+# What is Pilot?
+Pilot is an AI-powered CLI agent with access to your filesystem via terminal. It takes your natural language prompt, generates the shell commands needed, and executes them automatically.
