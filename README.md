@@ -14,7 +14,8 @@
 - [Usage](#usage)
 - [How It works](#how-it-works)
 - [Limitations](#limitations)
-- Future improvements
+- [Future improvements](#future-improvements)
+- [Contributing & Feedback](#contributing-feedback)
 
 # What is Pilot?
 Pilot is an AI-powered CLI agent with access to your filesystem via terminal. It takes your natural language prompt, generates the shell commands needed, and executes them automatically.
@@ -105,3 +106,17 @@ Pilot is powerful, but not perfect. Keep these in mind:
 - **AI can make mistakes** - Gemini might misunderstand or hallucinate commands
 - **Recursive context gathering** - Not working yet (planned for future)
 - **API dependency** - Requires internet and valid Gemini API key
+
+
+# Future Improvements:
+- [ ] Fix Recursive calling.
+
+# Contributing & Feedback
+
+Pilot is still in its early days. Found a bug? Have a cool idea? Want to contribute?
+
+- Open an issue on [GitHub](https://github.com/jayanth-14/pilot/issues)
+- Submit a PR if you're feeling adventurous
+- Or just yell at me on [Twitter/LinkedIn/whatever]
+
+All feedback welcome—even the brutal kind. Let's make pilot better together!
