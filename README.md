@@ -20,18 +20,21 @@
 Pilot is an AI-powered CLI agent with access to your filesystem via terminal. It takes your natural language prompt, generates the shell commands needed, and executes them automatically.
 
 # Prerequisites:
-Before moving to installation procedure, there is a major application you need to install.
+You'll need two things before installing:
 
 ## Deno: 
-[Deno](https://deno.com/) is the open-source JavaScript runtime for the modern web.
-You can install Deno via:
+[Deno](https://deno.com/) is a JavaScript runtime. Pilot uses it to compile and run.
 
 #### For Mac And Linux :
-`curl -fsSL https://deno.land/install.sh | sh`
+```bash
+curl -fsSL https://deno.land/install.sh | sh
+```
 
 #### For windows:
-`irm https://deno.land/install.ps1 | iex`
+```powershell
+irm https://deno.land/install.ps1 | iex
+```
 
 
 ## Gemini API Key:
-You need to have an api key to use gemini. You can get the api from [here](https://aistudio.google.com/app/apikey).
+Get your free API key from [Google AI Studio](https://aistudio.google.com/app/apikey).
