@@ -13,7 +13,7 @@
   - [Setting up API key](#setup-api-key)
 - [Usage](#usage)
 - [How It works](#how-it-works)
-- Limitations
+- [Limitations](#limitations)
 - Future improvements
 
 # What is Pilot?
@@ -94,3 +94,14 @@ When you run `Pilot`, it reads your natural language prompt, combines it with sy
 2. Builds a complete prompt with system rules(To only output shell commands).
 3. Sends to Gemini AI for command generation.
 4. Executes the shell commands via `zsh`.
+
+
+# Limitations
+
+Pilot is powerful, but not perfect. Keep these in mind:
+
+- **Mac/zsh only** - No Windows or Linux support yet
+- **No confirmation prompts** - Commands execute immediately (be careful!)
+- **AI can make mistakes** - Gemini might misunderstand or hallucinate commands
+- **Recursive context gathering** - Not working yet (planned for future)
+- **API dependency** - Requires internet and valid Gemini API key
