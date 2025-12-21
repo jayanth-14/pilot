@@ -59,3 +59,29 @@ echo 'export GEMINI_API_KEY="your-api-key"' >> ~/.zshrc
 source ~/.zshrc
 ```
 Replace "your-api-key" with your actual key from Google AI Studio.
+
+# Usage
+Now that the boring setup is done, let's move on to the fun part.
+
+Basic Syntax:
+```bash
+pilot "your task in plain english"
+```
+
+Examples:
+Here are few interactive examples to get started.
+
+##### Want to change js files to ts?
+```bash
+pilot "rename all the .js files to .ts"
+```
+
+#### Want to know who is the top contributor in project?
+```bash
+pilot "analyze the git history and show me the most active contributors"
+```
+
+#### Want to see last 10 commit messages?
+```bash
+pilot "show me the last 10 commit messages"
+```
