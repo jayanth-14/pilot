@@ -117,6 +117,5 @@ Pilot is still in its early days. Found a bug? Have a cool idea? Want to contrib
 
 - Open an issue on [GitHub](https://github.com/jayanth-14/pilot/issues)
 - Submit a PR if you're feeling adventurous
-- Or just yell at me on [Twitter/LinkedIn/whatever]
 
 All feedback welcome—even the brutal kind. Let's make pilot better together!
