@@ -65,13 +65,13 @@ Now that the boring setup is done, let's move on to the fun part.
 
 Basic Syntax:
 ```bash
-pilot "your task in plain english"
+pilot "your task in plain English"
 ```
 
 Examples:
-Here are few interactive examples to get started.
+Here are a few interactive examples to get started.
 
-##### Want to change js files to ts?
+#### Want to change js files to ts?
 ```bash
 pilot "rename all the .js files to .ts"
 ```
