@@ -4,7 +4,10 @@
 
 if [ -e /usr/local/bin/pilot ]; then
   rm /usr/local/bin/pilot
-  echo 'pilot deleted ✅';
+  echo ""
+  echo "╔════════════════════════════════════════════╗"
+  echo "║   ⚡ pilot uninstalled successfully! ⚡    ║"
+  echo "╚════════════════════════════════════════════╝"
 else
   echo 'pilot is not available';
 fi;

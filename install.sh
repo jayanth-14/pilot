@@ -12,7 +12,7 @@ fi;
 echo "Compiling pilot..."
 
 # compiling the project with full permissions
-deno compile -A --output /usr/local/bin/pilot main.js
+deno compile -A --output /usr/local/bin/pilot main.js &> /dev/null;
 
 # checking if compiling is success or not.
 if [ $? -ne 0 ]; then
@@ -20,4 +20,15 @@ if [ $? -ne 0 ]; then
   exit 1
 fi
 
-echo 'pilot compiled successfully ⚡️'
+echo ""
+echo "╔════════════════════════════════════════════╗"
+echo "║   ⚡ pilot installed successfully! ⚡      ║"
+echo "╚════════════════════════════════════════════╝"
+echo ""
+echo "📋 Quick setup:"
+echo "   Add to ~/.zshrc:"
+echo "   export GEMINI_API_KEY=\"your-api-key-here\""
+echo ""
+echo "   Then: source ~/.zshrc"
+echo ""
+echo "🚀 Ready to fly! Try: pilot \"list my files\""
