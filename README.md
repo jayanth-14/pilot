@@ -4,9 +4,9 @@
 
 ### Table of contents:
 - [What is Pilot?](#what-is-pilot)
-- Prerequisites:
-  - Deno
-  - Gemini API key
+- [Prerequisites](#prerequisites):
+  - [Deno](#deno)
+  - [Gemini API key](#gemini-api-key)
 - Installing pilot
   - Cloning repository
   - Installing.
