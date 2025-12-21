@@ -11,8 +11,8 @@
   - [Cloning repository](#cloning-repository)
   - [Running the installer](#running-the-installer)
   - [Setting up API key](#setup-api-key)
-- Usage
-- How It works
+- [Usage](#usage)
+- [How It works](#how-it-works)
 - Limitations
 - Future improvements
 
@@ -85,3 +85,12 @@ pilot "analyze the git history and show me the most active contributors"
 ```bash
 pilot "show me the last 10 commit messages"
 ```
+
+# How it works
+When you run `Pilot`, it reads your natural language prompt, combines it with system rules, sends that prompt to the Gemini AI along with a system prompt. Then executes the response as shell commands.
+
+**The pipeline**
+1. Pilot reads the prompt.
+2. Builds a complete prompt with system rules(To only output shell commands).
+3. Sends to Gemini AI for command generation.
+4. Executes the shell commands via `zsh`.
