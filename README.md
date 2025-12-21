@@ -4,13 +4,13 @@
 
 ### Table of contents:
 - [What is Pilot?](#what-is-pilot)
-- [Prerequisites](#prerequisites):
+- [Prerequisites](#prerequisites)
   - [Deno](#deno)
   - [Gemini API key](#gemini-api-key)
-- Installing pilot
-  - Cloning repository
-  - Installing.
-  - Setting up API key.
+- [Installing pilot](#installing-pilot)
+  - [Cloning repository](#cloning-repository)
+  - [Running the installer](#running-the-installer)
+  - [Setting up API key](#setup-api-key)
 - Usage
 - How It works
 - Limitations
@@ -35,6 +35,27 @@ curl -fsSL https://deno.land/install.sh | sh
 irm https://deno.land/install.ps1 | iex
 ```
 
-
 ## Gemini API Key:
 Get your free API key from [Google AI Studio](https://aistudio.google.com/app/apikey).
+
+# Installing Pilot
+Lets not wait anymore and install pilot -
+
+#### Cloning Repository
+```bash
+git clone https://github.com/jayanth-14/pilot
+cd pilot
+```
+
+#### Running the Installer
+```bash
+./install.sh
+```
+
+#### Setup API Key
+Add your Gemini API key to the shell config file.
+```bash
+echo 'export GEMINI_API_KEY="your-api-key"' >> ~/.zshrc
+source ~/.zshrc
+```
+Replace "your-api-key" with your actual key from Google AI Studio.
