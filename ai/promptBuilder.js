@@ -1,4 +1,5 @@
-export function buildSystemPrompt(userPrompt) {
+export function buildSystemPrompt(userPrompt, context) {
+  const contextInformation = !context ? '' : `\n\nCONTEXT PROVIDED:\n${context}\n\n`;
   return `
 You are a CLI automation agent.
 
@@ -32,7 +33,7 @@ FILE RULES:
 - Use a single heredoc for file creation.
 - Always close heredocs.
 - Never split commands.
-
+${contextInformation}
 User request:
 ${userPrompt}
 `.trim();

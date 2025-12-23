@@ -4,17 +4,19 @@ import { requireEnv } from "./utils/env.js";
 import { callGemini } from "./ai/geminiClient.js";
 import { buildSystemPrompt } from "./ai/promptBuilder.js";
 import { runShell } from "./exec/shell.js";
+import { readStdin } from "./utils/stdin.js";
 
 async function main() {
   const apiKey = requireEnv("GEMINI_API_KEY");
   const userPrompt = Deno.args.join(" ");
+  const context = await readStdin();
 
-  if (!userPrompt) {
+  if (!userPrompt && !context) {
     console.error('Usage: pilot "<task description>"');
     Deno.exit(1); 
   }
 
-  const systemPrompt = buildSystemPrompt(userPrompt);
+  const systemPrompt = buildSystemPrompt(userPrompt, context);
 
   const output = await callGemini({
     apiKey,
