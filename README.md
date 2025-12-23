@@ -87,15 +87,26 @@ pilot "analyze the git history and show me the most active contributors"
 pilot "show me the last 10 commit messages"
 ```
 
+#### Complex multi-step tasks
+```bash
+pilot "analyze git log and create a summary of changes from last week"
+```
+
+
 # How it works
 When you run `Pilot`, it reads your natural language prompt, combines it with system rules, sends that prompt to the Gemini AI along with a system prompt. Then executes the response as shell commands.
 
 **The pipeline**
 1. Pilot reads the prompt.
-2. Builds a complete prompt with system rules(To only output shell commands).
-3. Sends to Gemini AI for command generation.
-4. Executes the shell commands via `zsh`.
+2. Reads for any context provided from `stdin`.
+3. Builds a complete prompt with system rules(To only output shell commands).
+4. Sends to Gemini AI for command generation.
+5. Executes the shell commands via `zsh`.
 
+**Smart recursion:** If pilot needs more info, it can call itself with context:
+```bash
+git log --oneline | pilot "summarize these commits"
+```
 
 # Limitations
 
@@ -104,12 +115,11 @@ Pilot is powerful, but not perfect. Keep these in mind:
 - **Mac/zsh only** - No Windows or Linux support yet
 - **No confirmation prompts** - Commands execute immediately (be careful!)
 - **AI can make mistakes** - Gemini might misunderstand or hallucinate commands
-- **Recursive context gathering** - Not working yet (planned for future)
 - **API dependency** - Requires internet and valid Gemini API key
 
 
 # Future Improvements:
-- [ ] Fix Recursive calling.
+- [X] Fix Recursive calling.
 
 # Contributing & Feedback
 
