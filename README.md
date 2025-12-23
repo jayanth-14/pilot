@@ -118,8 +118,20 @@ Pilot is powerful, but not perfect. Keep these in mind:
 - **API dependency** - Requires internet and valid Gemini API key
 
 
-# Future Improvements:
-- [X] Fix Recursive calling.
+# Future Improvements
+
+Pilot v1 works, but here's what's coming:
+
+**Safety First:**
+- **Dry-run mode** - Preview commands before execution (`pilot --dry-run "..."`)
+- **Confirmation prompts** - Require approval for dangerous operations (rm, sudo, etc.)
+
+**Better Experience:**
+- **Command history** - Track all executed commands in a log file (`pilot --history` to view)
+- **Multi-platform support** - Auto-detect OS and shell (Windows PowerShell, Linux bash)
+
+**Smarter AI:**
+- **Auto model selection** - Complex tasks use powerful models, simple tasks use fast ones
 
 # Contributing & Feedback
 
